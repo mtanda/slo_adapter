@@ -1,0 +1,3 @@
+slo_configs:
+  - pattern: 'go_goroutines'
+    value: 100
