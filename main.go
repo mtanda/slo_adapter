@@ -23,8 +23,9 @@ import (
 )
 
 type cliConfig struct {
-	listenAddr string
-	configFile string
+	listenAddr    string
+	configFile    string
+	remoteReadUrl string
 }
 
 type Config struct {
@@ -81,6 +82,7 @@ func main() {
 	var cfg cliConfig
 	flag.StringVar(&cfg.listenAddr, "web.listen-address", ":9416", "Address to listen on for web endpoints.")
 	flag.StringVar(&cfg.configFile, "config.file", "./configs.yml", "Configuration file path.")
+	flag.StringVar(&cfg.remoteReadUrl, "remote-read.url", "http://localhost:9090/api/v1/read", "Address to read.")
 	flag.Parse()
 
 	logLevel := promlog.AllowedLevel{}
@@ -100,7 +102,7 @@ func main() {
 		panic(err)
 	}
 
-	u, err := url.Parse("http://localhost:9090/api/v1/read")
+	u, err := url.Parse(cfg.remoteReadUrl)
 	if err != nil {
 		level.Error(logger).Log("err", err)
 		panic(err)
