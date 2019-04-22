@@ -49,8 +49,8 @@ func runQuery(req prompb.ReadRequest, client *remote.Client, s Configs, logger l
 
 	result, err := client.Read(context.Background(), req.Queries[0])
 	if err != nil {
-		level.Error(logger).Log("err", err)
-		return make([]*prompb.TimeSeries, 0), nil
+		level.Error(logger).Log("err", err, "query", req.Queries[0])
+		return make([]*prompb.TimeSeries, 0), err
 	}
 
 	for _, ts := range result.Timeseries {
