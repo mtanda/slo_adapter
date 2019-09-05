@@ -1,0 +1,70 @@
+module git.gree-dev.net/aws-monitoring/slo_adapter
+
+go 1.12
+
+require (
+	cloud.google.com/go v0.24.0
+	github.com/Azure/azure-sdk-for-go v0.0.0-20161028183111-bd73d950fa44
+	github.com/Azure/go-autorest v7.2.2+incompatible
+	github.com/PuerkitoBio/purell v1.1.0
+	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+	github.com/aws/aws-sdk-go v1.14.13
+	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+	github.com/cespare/xxhash v1.0.0
+	github.com/davecgh/go-spew v1.1.0
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/docker/distribution v2.6.2+incompatible
+	github.com/emicklei/go-restful v0.0.0-20151126145626-777bb3f19bca
+	github.com/ghodss/yaml v1.0.0
+	github.com/go-ini/ini v1.37.0
+	github.com/go-kit/kit v0.7.0
+	github.com/go-logfmt/logfmt v0.3.0
+	github.com/go-openapi/jsonpointer v0.0.0-20180322222829-3a0015ad55fa
+	github.com/go-openapi/jsonreference v0.0.0-20180322222742-3fb327e6747d
+	github.com/go-openapi/spec v0.0.0-20180415031709-bcff419492ee
+	github.com/go-openapi/swag v0.0.0-20180405201759-811b1089cde9
+	github.com/go-stack/stack v1.7.0
+	github.com/gogo/protobuf v1.0.0
+	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+	github.com/golang/protobuf v1.1.0
+	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db
+	github.com/google/gofuzz v0.0.0-20170612174753-24818f796faf
+	github.com/gophercloud/gophercloud v0.0.0-20180623033157-1ad7a96d69a2
+	github.com/grpc-ecosystem/grpc-gateway v1.3.0
+	github.com/hashicorp/consul v1.1.0
+	github.com/hashicorp/go-cleanhttp v0.0.0-20171218145408-d5fe4b57a186
+	github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90
+	github.com/hashicorp/serf v0.8.1
+	github.com/jmespath/go-jmespath v0.0.0-20160202185014-0b12d6b521d8
+	github.com/juju/ratelimit v0.0.0-20171026090426-59fac5042749
+	github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515
+	github.com/mailru/easyjson v0.0.0-20180606163543-3fdea8d05856
+	github.com/matttproud/golang_protobuf_extensions v1.0.1
+	github.com/miekg/dns v1.0.8
+	github.com/mitchellh/go-homedir v0.0.0-20180523094522-3864e76763d9
+	github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223
+	github.com/pkg/errors v0.8.0
+	github.com/prometheus/client_golang v0.8.0
+	github.com/prometheus/client_model v0.0.0-20171117100541-99fa1f4be8e5
+	github.com/prometheus/common v0.0.0-20180518154759-7600349dcfe1
+	github.com/prometheus/procfs v0.0.0-20180612222113-7d6f385de8be
+	github.com/prometheus/prometheus v2.3.0+incompatible
+	github.com/samuel/go-zookeeper v0.0.0-20180130194729-c4fab1ac1bec
+	github.com/spf13/pflag v1.0.1
+	github.com/ugorji/go v0.0.0-20170107133203-ded73eae5db7
+	golang.org/x/crypto v0.0.0-20180621125126-a49355c7e3f8
+	golang.org/x/net v0.0.0-20180621144259-afe8f62b1d6b
+	golang.org/x/oauth2 v0.0.0-20180620175406-ef147856a6dd
+	golang.org/x/sys v0.0.0-20180622082034-63fc586f45fe
+	golang.org/x/text v0.3.0
+	golang.org/x/time v0.0.0-20180412165947-fbb02b2291d2
+	google.golang.org/api v0.0.0-20180506000402-20530fd5d65a
+	google.golang.org/appengine v1.1.0
+	google.golang.org/genproto v0.0.0-20180621235812-80063a038e33
+	google.golang.org/grpc v1.13.0
+	gopkg.in/fsnotify/fsnotify.v1 v1.4.7
+	gopkg.in/inf.v0 v0.9.1
+	gopkg.in/yaml.v2 v2.2.1
+	k8s.io/apimachinery v0.0.0-20170321210947-75b8dd260ef0
+	k8s.io/client-go v3.0.0-beta.0+incompatible
+)
