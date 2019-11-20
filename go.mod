@@ -8,7 +8,7 @@ require (
 	github.com/Azure/go-autorest v7.2.2+incompatible
 	github.com/PuerkitoBio/purell v1.1.0
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
-	github.com/aws/aws-sdk-go v1.14.13
+	github.com/aws/aws-sdk-go v1.25.38
 	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 	github.com/cespare/xxhash v1.0.0
 	github.com/davecgh/go-spew v1.1.0
@@ -35,7 +35,7 @@ require (
 	github.com/hashicorp/go-cleanhttp v0.0.0-20171218145408-d5fe4b57a186
 	github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90
 	github.com/hashicorp/serf v0.8.1
-	github.com/jmespath/go-jmespath v0.0.0-20160202185014-0b12d6b521d8
+	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
 	github.com/juju/ratelimit v0.0.0-20171026090426-59fac5042749
 	github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515
 	github.com/mailru/easyjson v0.0.0-20180606163543-3fdea8d05856
