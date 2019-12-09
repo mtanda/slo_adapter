@@ -8,7 +8,7 @@ require (
 	github.com/Azure/go-autorest v7.2.2+incompatible
 	github.com/PuerkitoBio/purell v1.1.0
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
-	github.com/aws/aws-sdk-go v1.25.38
+	github.com/aws/aws-sdk-go v1.25.48
 	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 	github.com/cespare/xxhash v1.0.0
 	github.com/davecgh/go-spew v1.1.0
