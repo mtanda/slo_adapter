@@ -1,0 +1,1 @@
+ARGS="--config.file=/usr/local/etc/slo_adapter.yml --web.listen-address=127.0.0.1:9417 --remote-read.url=http://localhost:9090/prometheus/api/v1/read"

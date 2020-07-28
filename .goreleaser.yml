@@ -1,0 +1,46 @@
+builds:
+- main: ./
+  flags: -a -tags netgo
+  ldflags: |
+    -s -w
+  env:
+    - CGO_ENABLED=0
+  goos:
+    - linux
+    - darwin
+  goarch:
+    - amd64
+nfpms:
+  -
+    package_name: slo-adapter
+    file_name_template: 'slo-adapter_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}{{ if .Mips }}_{{ .Mips }}{{ end }}'
+    homepage: https://github.com/mtanda/slo_adapter
+    maintainer: Mitsuhiro Tanda
+    description: slo adapter
+    license: Apache 2.0
+    replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      386: i386
+      amd64: x86_64
+    formats:
+      - deb
+      - rpm
+    files:
+      "packaging/deb/systemd/**": "/usr/lib/systemd/system"
+    config_files:
+      "packaging/deb/etc/default/slo_adapter": "/etc/default/slo_adapter"
+      "packaging/deb/usr/local/etc/slo_adapter.yml": "/usr/local/etc/slo_adapter.yml"
+    scripts:
+      postinstall: "packaging/scripts/postinstall.sh"
+      postremove: "packaging/scripts/postremove.sh"
+      preremove: "packaging/scripts/preremove.sh"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+    - '^docs:'
+    - '^test:'
+    - '^cut:'
+    - '^typo'
